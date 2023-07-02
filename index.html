@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project Management Tool</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Project Management Tool</h1>
+
+    <!-- Input Name -->
+    <form id="name-form">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      <input type="submit" value="Submit">
+    </form>
+
+    <!-- Add Task Form -->
+    <h2>Add Task</h2>
+    <form class="add-task-form" id="add-task-form">
+      <input type="text" id="task-description" placeholder="Task description" required />
+      <input type="text" id="assignee" placeholder="Assignee" required />
+      <input type="submit" value="Add Task" />
+    </form>
+    <!-- Task List -->
+    <h2>Task List</h2>
+    <ul class="task-list" id="task-list">
+      <!-- Tasks will be dynamically added here -->
+    </ul>
+    
+    <!-- Add Comment Form -->
+    <h2>Add Comment</h2>
+    <form class="comment-form" id="comment-form">
+      <input type="text" id="comment-name" placeholder="Your name" required />
+      <textarea id="comment-text" placeholder="Comment" required></textarea>
+      <input type="submit" value="Add Comment" />
+    </form>
+     <!-- Comments -->
+     <h2>Comments</h2>
+     <ul class="comment-list" id="comment-list">
+       <!-- Comments will be dynamically added here -->
+     </ul>
+     <script src="script.js"></script>
+  </div>
+</body>
+</html>
